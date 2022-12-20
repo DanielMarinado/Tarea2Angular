@@ -1,0 +1,10 @@
+
+<div style="display:grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; align-items: center; justify-items: center;">
+    <div class="card" *ngFor="let item of paises" style="width: 18rem;">
+        <img class="card-img-top" [src]="item.flag">
+        <div class="card-body">
+            <h5 class="card-title">{{item.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{item.capital}}</h6>
+        </div>
+    </div>
+</div>
